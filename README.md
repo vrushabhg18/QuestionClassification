@@ -27,8 +27,8 @@ http://cogcomp.cs.illinois.edu/Data/QA/QC/train_1000.label
 Approach:
 1. First preprocessed all the questions and also added bigrams in corpus. 
 2. And then Used Doc2Vec implementation from gensim to convert questions to vectors which then fed to our neural Architecture.
-3. Created 2 hidden layer Neural Net and computed softmax at end. Used AdamOptimiser to optimise the cost function. This is simple architecture.
-4. Have ideas and need to implement this in future. Use Word2Vec embedding trained on a large dataset and use it to convert questions in vector. Use padding to have a fixed size of input for various length of questions.
+3. Created 2 hidden layer Neural Net and computed softmax at end. Used AdamOptimiser to optimise the cost function. This is simple architecture. This model overfits the data which need to be looked into and remove the overfitting.
+4. I have some ideas and need to implement this in future. Use Word2Vec embedding trained on a large dataset and use it to convert questions in vector. Use padding to have a fixed size of input for various length of questions.
 5. Then apply Text CNN with filter weights and biases and add maxpool and Relu to add non-linearity to it.
 6. Then again use cross_entropy, softmax and AdamOptimiser to train the model.
 
