@@ -29,3 +29,9 @@ Approach:
 4. Have ideas and need to implement this in future. Use Word2Vec embedding trained on a large dataset and use it to convert questions in vector. Use padding to have a fixed size of input for various length of questions.
 5. Then apply Text CNN with filter weights and biases and add maxpool and Relu to add non-linearity to it.
 6. Then again use cross_entropy, softmax and AdamOptimiser to train the model.
+
+
+Instructions:
+1. Requirement.txt attached which contains python packages used in the project
+2. Doc2VecScript1.py is the main script.
+3. Dataset "LabelledData.txt" should in the folder in which script is placed.
